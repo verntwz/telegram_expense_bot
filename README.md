@@ -21,7 +21,18 @@ This project sets up a Telegram bot that accepts receipt or bank statement scree
 
 ## 📦 Setup Instructions
 
-### 1. Clone this repo
+### 1. Clone this repo or set up a new project folder
+If you're starting a new project:
+```bash
+mkdir telegram-expense-bot
+cd telegram-expense-bot
+
+git init
+# Replace with your actual GitHub repo URL
+git remote add origin https://github.com/verntwz/telegram_expense_bot.git
+git pull origin main  # or "master" depending on your default branch
+```
+Or if cloning:
 ```bash
 git clone https://github.com/yourusername/telegram-expense-bot.git
 cd telegram-expense-bot
@@ -30,7 +41,7 @@ cd telegram-expense-bot
 ### 2. Create a virtual environment and install dependencies
 ```bash
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -62,7 +73,12 @@ If you prefer a self-hosted model:
 
 ### Install Ollama
 ```bash
-brew install ollama
+brew install ollama  # macOS
+```
+Or on Windows, download the installer from: https://ollama.com/download
+
+Then run:
+```bash
 ollama run mistral
 ```
 
